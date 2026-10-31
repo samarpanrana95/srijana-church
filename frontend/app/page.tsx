@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="w-full">
-      <div className="bg-[url('/images/backgroundOne.jpg')] bg-center bg-cover p-40 m-0 h-[90vh] relative font-bebas">
-        <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px] flex items-center justify-center flex-col text-shadow-gray-700 text-shadow-sm gap-6">
-          <h1 className="text-4xl text-blue-200">Srijana Church</h1>
-          <h2 className="text-6xl text-blue-300">Welcomes you to</h2>
-          <h3 className="text-8xl text-blue-200">Youth Tihar Camp 2026</h3>
+      <div className="bg-[url('/images/backgroundOne.jpg')] bg-center bg-cover p-10 md:p-40 m-0 h-[90vh] relative font-bebas">
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-[3px] md:backdrop-blur-[2px] text-center px-10 py-30 flex items-center justify-evenly flex-col text-shadow-gray-700 text-shadow-sm gap-6">
+          <h1 className="text-5xl md:text-4xl text-blue-200">Srijana Church</h1>
+          <h2 className="text-5xl md:text-6xl text-blue-300">Welcomes you to</h2>
+          <h3 className="text-5xl md:text-8xl text-blue-200">Youth Tihar Camp 2026</h3>
           <h4></h4>
         </div>
       </div>

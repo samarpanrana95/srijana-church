@@ -39,7 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="main grow">
           {children}
         </div>
-        <footer className="bg-white p-1  w-full text-center text-blue-300 font-bebas fixed bottom-0 z-50">@srijanachurch2026</footer>
+        <footer className="p-0 md:p-1 w-full text-center bg-white text-blue-300 font-bebas fixed bottom-0 z-50">@srijanachurch2026</footer>
       </body>
     </html>
   )
