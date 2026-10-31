@@ -15,13 +15,25 @@ export default function NavigationBar () {
         <ul className={`flex gap-12 font-bold items-center`}>
             <li className="text-4xl md:hidden" onClick={toggleNavSate}>≡</li>
             <li className = {`text-2xl cursor-pointer md:inline hidden ${navClicked ? "inline absolute top-15 right-0 left-0 z-51 bg-white text-center" : ""}`}>
-              <Link href="/gallery" onClick={toggleNavSate}>GALLERY</Link>
+              <Link href="/gallery" onClick={() => {
+                if (navClicked) {
+                  toggleNavSate()
+                  }
+                }}>GALLERY</Link>
             </li>
             <li className={`text-2xl cursor-pointer md:inline hidden ${navClicked ? "inline absolute top-23 right-0 left-0 z-52 bg-white text-center" : ""}`}>
-              <Link href="/about" onClick={toggleNavSate}>ABOUT</Link>
+              <Link href="/about" onClick={() => {
+                if (navClicked) {
+                  toggleNavSate()
+                  }
+                }}>ABOUT</Link>
             </li>
             <li className={`text-2xl cursor-pointer md:inline hidden ${navClicked ? "inline absolute top-31 right-0 left-0 z-53 bg-white text-center" : ""}`}>
-              <Link href="/contact" onClick={toggleNavSate}>CONTACT</Link>
+              <Link href="/contact" onClick={() => {
+                if (navClicked) {
+                  toggleNavSate()
+                  }
+                }}>CONTACT</Link>
             </li> 
         </ul>
     )
