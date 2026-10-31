@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="w-full">
-      <div className="bg-[url('/images/backgroundOne.jpg')] bg-center bg-cover p-10 md:p-40 m-0 h-[60vh] md:h-[90vh] relative font-bebas">
+      <div className="bg-[url('/images/backgroundOne.jpg')] bg-center bg-cover p-10 md:p-40 m-0 h-[60vh] md:h-[90vh] relative font-bebas border-b-4 border-blue-300 border-solid md:border-0">
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[3px] md:backdrop-blur-[2px] text-center px-10 py-30 flex items-center justify-evenly flex-col text-shadow-gray-700 text-shadow-sm gap-6">
           <h1 className="text-5xl md:text-4xl text-blue-200 border-solid border-blue-500 border-b-4">Srijana Church</h1>
           <h2 className="text-5xl md:text-6xl text-blue-300 border-solid border-green-500 border-b-4">Welcomes you to</h2>
@@ -12,7 +12,7 @@ export default function Home() {
           <h4></h4>
         </div>
       </div>
-      <div className="p-10 md:p-20 min-h-screen bg-linear-to-b from-blue-200 to-blue-500 font-bebas flex flex-col justify-center">
+      <div className="p-10 md:p-20 min-h-[80vh] md:min-h-screen bg-linear-to-b from-blue-200 to-blue-500 font-bebas flex flex-col justify-center">
         <h2 className="text-3xl mb-2 md:text-6xl md:mb-4">Join Us on <span className="text-6xl md:text-8xl text-red-500 underline">Nov 7 - Nov 9</span><span className="ml-4 text-3xl md:text-4xl text-black">rs700 per person</span></h2>        
         <h2 className="text-5xl md:text-6xl text-center">This time, with a fun theme of</h2>
         <h3 className="text-6xl md:text-8xl text-right"><span className="text-red-600">Avengers: Age of God</span></h3>
