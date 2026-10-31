@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Bebas_Neue } from "next/font/google";
 import Link from "next/link";
+import NavigationBar from "./navigationBar";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -28,22 +29,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={bebasNeue.variable}>
-      <body className="flex flex-col min-h-screen ">
-        <header className="font-bebas w-screen flex px-18 py-5 justify-between bg-white text-blue-400 border-solid border-b-4 border-b-blue-200 sticky top-0 z-50">
-          <span className="text-2xl cursor-pointer font-bold">
+      <body className="flex flex-col min-h-screen w-full">
+        <header className="font-bebas px-4 py-2 md:px-18 md:py-5 sticky top-0 z-50 w-full flex justify-between items-center bg-white text-blue-400 border-solid border-b-4 border-b-blue-200">
+          <span className="text-3xl leading-0 md:text-2xl cursor-pointer font-bold">
             <Link href="/">Srijana</Link>
           </span>
-          <ul className="flex gap-12 font-bold">
-            <li className="text-2xl cursor-pointer">
-              <Link href="/gallery">GALLERY</Link>
-            </li>
-            <li className="text-2xl cursor-pointer">
-              <Link href="/about">ABOUT</Link>
-            </li>
-            <li className="text-2xl cursor-pointer">
-              <Link href="/contact">CONTACT</Link>
-            </li>
-          </ul>
+          <NavigationBar />
         </header>
         <div className="main grow">
           {children}
